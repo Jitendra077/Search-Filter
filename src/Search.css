@@ -1,0 +1,23 @@
+.styles {
+    
+    float: left;
+    padding: 30px 10px 40px;
+    background-color: white;
+    margin: auto;
+    overflow: auto;
+    border: 1px solid orangered;  
+    display: block;
+    width:20%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: repeat(2 , 5, 1fr);
+    grid-auto-rows: minmax(40px,50px,  auto);
+   
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="styles form"] {
+    width: 100%;
+  }
+}
